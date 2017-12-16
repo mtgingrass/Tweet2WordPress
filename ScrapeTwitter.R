@@ -7,15 +7,10 @@ library(plyr)
 library(RColorBrewer)
 
 ### Set API Keys
-api_key <- ""
-api_secret <- ""
-access_token <- "-"
-access_token_secret <- ""
-
-#api_key <- "XXXXXXXXXXXXXXXXXXXX"
-#api_secret <- "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-#access_token <- "xxxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-#access_token_secret <- "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+api_key <- "XXXXXXXXXXXXXXXXXXXX"
+api_secret <- "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+access_token <- "xxxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+access_token_secret <- "xxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 ### Authorize Twitter API and Grab Latest Tweets
 setup_twitter_oauth(api_key, api_secret, access_token, access_token_secret)
