@@ -8,8 +8,10 @@ if (!require('RWordPress'))
   install.packages('RWordPress', repos = 'http://www.omegahat.org/R', type = 'source')
 library(RWordPress)
 library(knitr)
-#options(WordpressLogin = c(username = 'password!'), WordpressURL = 'http://devgin.com/xmlrpc.php')
-options(WordpressLogin = c(username = 'password!'), WordpressURL = 'http://therealdonaldtrump2020.com/xmlrpc.php')
+library(XMLRPC)
+options(WordpressLogin = c(username = 'password'), WordpressURL = 'http://therealdonaldtrump2020.com/xmlrpc.php')
+
+#options(WordpressLogin = c(mtgingrass = 'llm2323J!'), WordpressURL = 'http://devgin.com/xmlrpc.php')
 opts_knit$set(upload.fun = imgur_upload, base.url = NULL)  # upload all images to imgur.com
 opts_chunk$set(fig.width = 7, fig.height = 7, cache = TRUE)
 ```
@@ -51,10 +53,10 @@ knit2wpCrayon <- function(input, title="A post from knitr", ...,
 
 
 ```{r message=FALSE, warning=FALSE, paged.print=FALSE}
-knit2wpCrayon("TrumpWordCloud.Rmd", 
-        title = "Word of the day!",
+knit2wpCrayon("FrontEnd.Rmd", 
+        title = "For FrontENd",
         categories = c("Mark"), 
-        publish = TRUE, upload = TRUE)
+        publish = FALSE, upload = TRUE)
 ```
 
 
